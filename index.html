@@ -27,7 +27,7 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Deal1000 App</title>
+        <title>RimzimDadu App</title>
         <link rel="apple-touch-icon" href="icon.png">
     </head>
     <body>   
@@ -37,7 +37,7 @@
                   <div class="header-language-container">
                     <div class="header-main-part">
                       <div class="header-main-inner-sects">
-                        Deal1000
+                        RimzimDadu
                       </div>
                     </div>
                   </div>
@@ -117,7 +117,7 @@
             var app_version='1.1.7';            
             var is_notyfy=false;
 			document.addEventListener("deviceready", onDeviceReady, false);
-			var db = window.openDatabase("DEAL1000_DB", "1.0", "Just a DEAL1000 DB", 200000);
+			var db = window.openDatabase("RIMZIMDADU_DB", "1.0", "Just a RIMZIMDADU DB", 200000);
 			var pushNotification;
 			function getDeviceProperty()
 			{
@@ -175,7 +175,7 @@
 					var device_uuid=deviceInfo.uuid;
 					$.ajax({
 						type : 'GET',
-						url : 'http://www.deal1000.com/app_device_info.php',
+						url : 'http://www.rimzimdadu.com/app_device_info.php',
 						dataType : 'jsonp',
 						async : false,
 						jsonpCallback : 'jsoncallback',
@@ -312,7 +312,7 @@
 				window.localStorage.setItem("password", password);
 				$.ajax({
 					type : 'GET',
-					url : 'http://www.deal1000.com/getFacebook.php',
+					url : 'http://www.rimzimdadu.com/getFacebook.php',
 					dataType : 'jsonp',
 					async : false,
 					jsonpCallback : 'jsoncallbackUser',
@@ -425,7 +425,7 @@
 				$('.progress-bar-validation').show();
 				$.ajax({
 					type : 'GET',
-					url : 'http://www.deal1000.com/connectedByEmail.php',
+					url : 'http://www.rimzimdadu.com/connectedByEmail.php',
 					dataType : 'jsonp',
 					async : false,
 					jsonpCallback : 'jsoncallbackConnectedByEmail',
@@ -449,7 +449,7 @@
 				$('.progress-bar-validation').show();
 				$.ajax({
 					type : 'GET',
-					url : 'http://www.deal1000.com/connectedByEmail.php',
+					url : 'http://www.rimzimdadu.com/connectedByEmail.php',
 					dataType : 'jsonp',
 					async : false,
 					jsonpCallback : 'jsoncallbackConnectedByEmail',
@@ -505,7 +505,7 @@
 				$('.progress-bar-validation').show();
 				$.ajax({
 					type : 'GET',
-					url : 'http://www.deal1000.com/connectedByEmail.php',
+					url : 'http://www.rimzimdadu.com/connectedByEmail.php',
 					dataType : 'jsonp',
 					async : false,
 					jsonpCallback : 'jsoncallbackConnectedByEmail',
@@ -564,7 +564,7 @@
 				$('.loader-iframe').css("display", "block");
 				$(".Offline-app-login-window").remove();
 
-				var iframeURL = 'http://www.deal1000.com/autoLogin.php';
+				var iframeURL = 'http://www.rimzimdadu.com/autoLogin.php';
 				var iframeID = 'MyIFrame';
 				var password = '12345678';
 				
